@@ -7,4 +7,6 @@
 #
 
 def calculate_sum(values):
-    pass
+    if len(values) == 0:
+        return None
+    return sum(values)
