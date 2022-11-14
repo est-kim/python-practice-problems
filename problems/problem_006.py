@@ -10,4 +10,4 @@
 # problem to get a good feel for how to solve it.
 
 def can_skydive(age, has_consent_form):
-    pass
+    return age >= 18 or has_consent_form == True
