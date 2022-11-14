@@ -8,4 +8,7 @@
 # Pseudocode is available for you
 
 def calculate_average(values):
-    pass
+    if len(values) == 0:
+        return None
+    average = (sum(values) / len(values))
+    return average
