@@ -20,4 +20,5 @@
 # Look up the enumerate function to help you with this problem.
 
 def find_indexes(search_list, search_term):
-    pass
+    results = [index for index, value in enumerate(search_list) if value == search_term]
+    return results
