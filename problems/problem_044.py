@@ -18,4 +18,8 @@
 # Remember that a dictionary has the ".get" method on it.
 
 def translate(key_list, dictionary):
-    pass
+    new_list = []
+    for key in key_list:
+        keys = dictionary.get(key)
+        new_list.append(keys)
+    return new_list
