@@ -27,5 +27,11 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+import itertools
+
+
 def make_sentences(subjects, verbs, objects):
-    pass
+    list = [subjects, verbs, objects]
+    combo = [p for p in itertools.product(*list)]
+    sentence = [" ".join(i) for i in combo]
+    return sentence
