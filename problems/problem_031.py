@@ -14,4 +14,12 @@
 # problem to get a good feel for how to solve it.
 
 def sum_of_squares(values):
-    pass
+    new_list = []
+    if len(values) == 0:
+        return None
+    elif len(values) >= 1:
+        for value in values:
+            value_squared = value * value
+            new_list.append(value_squared)
+            sum_squared = sum(new_list)
+        return sum_squared
