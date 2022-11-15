@@ -21,5 +21,13 @@
 #      return value1, value2
 
 
-def count_letters_and_digits(s):
-    pass
+def count_letters_and_digits(str):
+    letter_count = 0
+    char_count = 0
+    split_str = [*str]
+    for x in split_str:
+        if x.isdigit():
+            char_count += 1
+        elif x.isalpha():
+            letter_count += 1
+    return letter_count, char_count
