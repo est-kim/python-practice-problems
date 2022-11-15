@@ -11,4 +11,8 @@
 # If the list is empty, then return the empty string.
 
 def remove_duplicate_letters(s):
-    pass
+    new_str = ""
+    if s == "":
+        return s
+    new_str = new_str.join(dict.fromkeys(s))
+    return new_str
