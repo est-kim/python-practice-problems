@@ -5,7 +5,7 @@
 # sum of the numbers in the comma-separated string.
 #
 # These kinds of strings are called CSV strings, or comma-
-# sepearted values strings.
+# seperated values strings.
 #
 # Examples:
 #   * input:  []
@@ -21,4 +21,10 @@
 # Write out your own pseudocode to help guide you.
 
 def add_csv_lines(csv_lines):
-    pass
+    count = 0
+    for line in csv_lines:
+        temp = line.split(",")
+        num = [int(x) for x in temp]
+        csv_lines[count] = sum(num)
+        count += 1
+    return csv_lines
