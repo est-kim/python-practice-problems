@@ -24,4 +24,6 @@
 #     result: "   19"
 
 def pad_left(number, length, pad):
-    pass
+    number = str(number)
+    result = number.rjust(length, str(pad))
+    return result
