@@ -13,4 +13,6 @@
 # Look up the zip function to help you with this problem.
 
 def pairwise_add(list1, list2):
-    pass
+    zip_list = zip(list1, list2)
+    result = [x + y for (x, y) in zip_list]
+    return result
