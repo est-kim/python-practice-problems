@@ -12,3 +12,15 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+def halve_the_list(list1):
+    n = len(list1)
+    half = int(n/2)
+    if n % 2 == 0:
+        return list1[:half], list1[half:]
+    else:
+        return list1[:n - half], list1[half + 1:]
+
+
+
+
+#resource: https://stackoverflow.com/questions/24105856/what-is-the-most-efficient-way-to-split-a-list-evenly-in-half
