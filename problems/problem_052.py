@@ -15,3 +15,18 @@
 #
 # https://docs.python.org/3/library/random.html
 
+from random import randint
+
+def generate_lottery_numbers():
+    new_list = []
+    while len(new_list) < 6:
+        new_list.append(randint(1, 40))
+        for num in new_list:
+            if new_list.count(num) > 1:
+                new_list.remove(num)
+                new_list.append(randint(1, 40))
+    return new_list
+
+
+#source https://www.geeksforgeeks.org/python-count-occurrences-element-list/
+#https://www.freecodecamp.org/news/python-list-remove-how-to-remove-an-item-from-a-list-in-python/#:~:text=How%20to%20Remove%20an%20Element,find%20it%20and%20remove%20it.
