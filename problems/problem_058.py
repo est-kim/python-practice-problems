@@ -20,5 +20,21 @@
 #     * input:   ["Cleveland, OH", "Columbus, OH", "Chicago, IL"]
 #       returns: {"OH": ["Cleveland", "Columbus"], "IL": ["Chicago"]}
 #
-# You may want to look up the ".strip()" method for the string.
+# You may want to look up the ".split()" method for the string.
 
+def group_cities_by_state(cities):
+    empty_dict = {}
+    new_dict = dict(s.split(", ", 1) for s in cities)
+    for k, v in new_dict.items():
+        if v not in empty_dict:
+            empty_dict[v] = [k]
+        else:
+            empty_dict[v].append(k)
+    return empty_dict
+
+
+#resources:
+#https://www.geeksforgeeks.org/python-string-split/
+#https://stackoverflow.com/questions/55706508/how-to-switch-values-and-keys-with-python-dict
+#https://www.geeksforgeeks.org/python-dictionary-items-method/
+#https://stackoverflow.com/questions/51933112/how-to-convert-list-of-string-to-dictionary-in-python
