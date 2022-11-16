@@ -7,3 +7,15 @@
 #
 # Don't for get to import math!
 
+import math
+
+
+def safe_divide(numer, denom):
+    if denom == 0:
+        return math.inf
+    else:
+        return numer / denom
+
+
+
+#resource: https://www.includehelp.com/python/math-inf-constant-with-example.aspx
