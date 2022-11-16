@@ -15,3 +15,11 @@
 #    * input:   "raise"
 #      RAISES:  ValueError
 
+def check_input(input):
+    if input == "raise":
+        raise ValueError
+    else:
+        return input
+
+
+#resource: https://stackoverflow.com/questions/2052390/manually-raising-throwing-an-exception-in-python
