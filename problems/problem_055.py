@@ -28,3 +28,11 @@
 #     * input: 10
 #       returns:  "X"
 
+def simple_roman(value):
+    i = ["", "I", "II", "III", "IV", "V",
+         "VI", "VII", "VIII", "IX", "X"]
+    ones = i[value]
+    return ones
+
+
+#resource https://www.geeksforgeeks.org/python-program-to-convert-integer-to-roman/
