@@ -15,3 +15,12 @@
 #       parameter 2: 0
 #     returns: "92380"
 
+
+def num_concat(num1, num2):
+    combo = str("".join([str(num1), str(num2)]))
+    return combo
+
+
+
+
+#resource: https://www.geeksforgeeks.org/python-string-concatenation/
