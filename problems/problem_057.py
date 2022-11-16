@@ -13,3 +13,14 @@
 #     * input:   3
 #       returns: 1/2 + 2/3 + 3/4
 
+
+def sum_fraction_sequence(number):
+    sum = 0
+    for i in range(1, number + 1):
+        sum += i / (i + 1)
+    return sum
+
+
+
+
+#resource: https://stackoverflow.com/questions/69475392/how-to-use-for-loop-to-sum-first-n-integer-fractions
