@@ -15,3 +15,9 @@
 #    * input:   "basia_farid+test@yahoo.com"
 #      returns: "basia_farid+test"
 
+def username_from_email(email):
+    username = email[:email.find('@')]
+    return username
+
+
+#resource: https://www.geeksforgeeks.org/python-extract-domain-name-from-email-address/
