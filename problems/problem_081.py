@@ -41,4 +41,34 @@
 # Behavior:
 #    * speak()          # Returns the string "Sssssss!"
 
+class Animal:
+    def __init__(self, number_of_legs, primary_color):
+        self.number_of_legs = number_of_legs
+        self.primary_color = primary_color
 
+    def describe(self):
+        return self.__class__.__name__ + " has " + str(self.number_of_legs) + " legs and is primarily " + self.primary_color
+
+class Dog(Animal):
+    def __init__(self, number_of_legs, primary_color):
+        super().__init__(number_of_legs, primary_color)
+
+    def speak(self):
+        return "Bark!"
+
+class Cat(Animal):
+    def __init__(self, number_of_legs, primary_color):
+        super().__init__(number_of_legs, primary_color)
+
+    def speak(self):
+        return "Miao!"
+
+class Snake(Animal):
+    def __init__(self, number_of_legs, primary_color):
+        super().__init__(number_of_legs, primary_color)
+
+    def speak(self):
+        return "Sssssss!"
+
+#resoureces:
+#https://www.geeksforgeeks.org/python-super/
