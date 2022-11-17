@@ -17,3 +17,19 @@
 #
 # You may want to look at the built-in "abs" function
 
+
+def biggest_gap(numbers):
+    new_list = []
+    for num in range(len(numbers)-1):
+        diff_left = numbers[num+1] - numbers[num]
+        new_list.append(diff_left)
+        diff_right = numbers[num] - numbers[num+1]
+        new_list.append(diff_right)
+    new_list.sort()
+    biggest_diff = new_list[-1]
+    return biggest_diff
+
+
+#resources:
+#https://www.tutorialspoint.com/largest-gap-in-python
+#https://www.pythontutorial.net/python-basics/python-sort-list/
