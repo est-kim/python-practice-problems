@@ -13,3 +13,13 @@
 #                lows:  [72, 78, 70, 70]
 #       result:         [ 8,  3,  5, 10]
 
+
+def temperature_differences(highs, lows):
+    temp_diff = []
+    for temp1, temp2 in zip(highs, lows):
+        temp_diff.append(temp1 - temp2)
+    return temp_diff
+
+
+#resources:
+#https://datagy.io/python-subtract-two-lists/
